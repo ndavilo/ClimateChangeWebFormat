@@ -1,0 +1,118 @@
+.root {
+  --color: #333;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/premium-photo/winter-sunrise-landscape-snowy-mountains_344168-65.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.first p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+  font-weight: 300;
+  font-size: 2rem;
+  color: aqua;
+}
+
+.card p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.card a,
+.container a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: rgb(238, 24, 24);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+}
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 30vh;
+  background: #241111;
+}
+
+.second {
+  background-image: url(https://img.freepik.com/premium-photo/winter-sunrise-landscape-snowy-mountains_344168-65.jpg);
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card>a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: Opx 29px 38px -15px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: 0.3em;
+}
+
+.img-first {
+  background-image: url(https://www.thenews.com.pk/assets/uploads/akhbar/2021-06-29/856739_4495851_hottest_akhbar.jpg);
+}
+
+.img-second {
+  background-image: url(https://media.istockphoto.com/photos/beautifully-structured-thunderstorm-in-bulgarian-plains-picture-id1263562386?k=20&m=1263562386&s=612x612&w=0&h=z7Qxzy11pvU41aTCEXfod1Fyn_-kpn9hbyw0kNq9vWs=);
+}
+
+.img-third {
+  background-image: url(https://cff2.earth.com/uploads/2022/03/15155357/Drought2-960x640.jpg);
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}

@@ -1,0 +1,261 @@
+.my-top-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 0;
+  background: #241111;
+  border: 0 solid #dedede;
+}
+
+.my-logo-name,
+.bi {
+  color: gold;
+  text-transform: uppercase;
+}
+
+.my-top-nav .my-navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-top-nav .my-navbar .my-top-nav .my-navbar .my-nav-links {
+  height: 100%;
+  line-height: 70px;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links {
+  display: flex;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li {
+  position: relative;
+  align-items: center;
+  list-style: none;
+  padding: 0 14px;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li a {
+  position: relative;
+  display: flex;
+  height: 100%;
+  line-height: 70px;
+  color: #03e9f4;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  font-weight: 200;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li a:hover {
+  color: gold;
+}
+
+.my-navbar .my-logo {
+  text-decoration: none;
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: fantasy;
+  color: gold;
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.my-top-nav .my-navbar .my-bx-menu,
+.my-top-nav .my-navbar .my-nav-links .my-sidebar-logo {
+  display: none;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li .arrow {
+  height: 100%;
+  width: 22px;
+  color: #fff;
+  line-height: 70px;
+  transition: all 0.3s ease;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .news-arrow,
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .crypto-arrow,
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .profile-arrow {
+  transform: rotate(180deg);
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links .sub-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #241111;
+  border: 0px solid #dedede;
+  line-height: 40px;
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 1;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links .sub-menu li {
+  padding: 0 22px;
+  border-bottom: 1px solid #dedede;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links .sub-menu li a {
+  color: #03e9f4;
+  font-size: 14px;
+  font: 500;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links .sub-menu li a:hover {
+  color: gold;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links .sub-menu li .more-arrow {
+  line-height: 40px;
+}
+
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .news-sub-menu,
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .crypto-sub-menu,
+.my-top-nav .my-navbar .my-nav-links .my-links li:hover .profile-sub-menu {
+  display: block;
+}
+
+.my-navbar .my-nav-links .my-links .more:hover .more-sub-menu {
+  display: block;
+}
+
+.my-navbar .my-nav-links .my-links .more .more-sub-menu {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 1;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+}
+
+.my-navbar .my-nav-links .my-links .more .more-sub-menu li a:hover {
+  color: gold;
+}
+
+@media(max-width:1250px) {
+  .my-top-nav {
+    height: 100px;
+  }
+  .my-top-nav .my-navbar{
+    justify-content: space-between;
+  }
+  .my-top-nav .my-navbar .my-logo {
+    text-decoration: none;
+    position: absolute;
+    right: 1%;
+    top: 20%;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -100%;
+    max-width: 800px;
+    width: 100%;
+    background: #241111;
+    z-index: 1;
+    line-height: 40px;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links li a {
+    display: contents;
+  }
+
+  .my-top-nav .my-navbar .my-bx-menu,
+  .my-top-nav .my-navbar .my-nav-links .my-sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .my-nav-links .my-sidebar-logo .my-logo-name {
+    color: gold;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links li {
+    display: block;
+    border-bottom: none;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links .sub-menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links .sub-menu li {
+    border-bottom: none;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .news-sub-menu,
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .crypto-sub-menu,
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .profile-sub-menu {
+    display: block;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links li .arrow {
+    line-height: 40px;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .news-arrow,
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .crypto-arrow,
+  .my-top-nav .my-navbar .my-nav-links .my-links li:hover .profile-arrow {
+    transform: rotate(0);
+  }
+
+  .my-top-nav .my-navbar .my-nav-links.show1 .my-links .sub-menu.news-sub-menu {
+    display: block;
+  }
+
+  .my-navbar .my-nav-links.show2 .my-links .more .more-sub-menu {
+    display: block;
+  }
+
+  .my-navbar .my-nav-links.show2 .my-links .sub-menu .more-arrow {
+    transform: rotate(180deg);
+  }
+
+  .my-top-nav .my-navbar .my-nav-links.show3 .my-links .sub-menu.crypto-sub-menu {
+    display: block;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links.show4 .my-links .sub-menu.profile-sub-menu {
+    display: block;
+  }
+
+  .my-top-nav .my-navbar .my-nav-links.show1 .my-links li .news-arrow,
+  .my-top-nav .my-navbar .my-nav-links.show3 .my-links li .crypto-arrow,
+  .my-top-nav .my-navbar .my-nav-links.show4 .my-links li .profile-arrow {
+    transform: rotate(180deg);
+  }
+}

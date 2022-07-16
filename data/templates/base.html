@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='{% static "css/base.css" %}'>
+  <link rel="stylesheet" href='{% static "css/nav.css" %}'>
+  <link rel="stylesheet" href='{% static "css/table.css" %}'>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="my-top-nav">
+    <div class="my-navbar">
+      <div class="my-bx-menu">
+        <span class="my-logo-name"> Climate Change blog </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </div>
+      <a href="#" class="my-logo">CC</a>
+      <div class="my-nav-links">
+        <div class="my-sidebar-logo">
+          <span class="my-logo-name"> Climate Change blog </span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </div>
+        <ul class="my-links">
+          <li>
+            <a href="#">
+              Climate Change <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down arrow crypto-arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </a>
+            <ul class="crypto-sub-menu sub-menu">
+              <li>
+                <a href="#"><span data-feather="layers"></span> </a>
+              </li>
+              <li class="more">
+                <a href="#">
+                  World <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right more-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg></a>
+                <ul class="more-sub-menu sub-menu">
+                  <li>
+                    <a class="mylink" href="#">United States</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">United Kingdom</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">India</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">Saudi Arabia</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://securedgroupchat.herokuapp.com/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" />
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
+                  </svg> Secured Group Chat</a>
+              </li>
+              <li>
+                <a href="https://bit4blog.herokuapp.com/coins/" target="_blank" rel="noopener noreferrer"><span data-feather="layers"></span>
+                  rest_framework </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              Africa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down arrow news-arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+              </svg></a>
+            <ul class="news-sub-menu sub-menu">
+              <li>
+                <a class="mylink" href="#">South Africa</a>
+              </li>
+              <li>
+                <a class="mylink" href="#">Ghana</a>
+              </li>
+              <li>
+                <a class="mylink" href="#">Kenya</a>
+              </li>
+              <li>
+                <a class="mylink" href="#">Egypt</a>
+              </li>
+              <li class="more">
+                <a href="#">More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right more-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg></a>
+                <ul class="more-sub-menu sub-menu">
+                  <li>
+                    <a class="mylink" href="#">Senegal</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">Tanzania</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">Mali</a>
+                  </li>
+                  <li>
+                    <a class="mylink" href="#">Cameroon</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              Nigeria
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Abuja
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container table-container">
+    <table class="outer-table">
+      <thead bgcolor=gold>
+        <tr>
+          <th>2021</th>
+          <th>2022</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>
+          <table class="inner-table" rules=all>
+            <thead bgcolor=gold>
+              <tr>
+                <th>Country</th>
+                <th>Sun</th>
+                <th>Rain</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nigeria</td>
+              </tr>
+              <tr>
+                <td>USA</td>
+              </tr>
+              <tr>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>South Africa</td>
+              </tr>
+              <tr>
+                <td>Ghana</td>
+              </tr>
+              <tr>
+                <td>Kenya</td>
+              </tr>
+              <tr>
+                <td>Egypt</td>
+              </tr>
+              <tr>
+                <td>France</td>
+              </tr>
+              <tr>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>Ukraine</td>
+              </tr>
+              <tr>
+                <td>Italy</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table class="inner-table" rules=all>
+            <thead bgcolor=gold>
+              <tr>
+                <th>Country</th>
+                <th>Sun</th>
+                <th>Rain</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nigeria</td>
+              </tr>
+              <tr>
+                <td>USA</td>
+              </tr>
+              <tr>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>South Africa</td>
+              </tr>
+              <tr>
+                <td>Ghana</td>
+              </tr>
+              <tr>
+                <td>Kenya</td>
+              </tr>
+              <tr>
+                <td>Egypt</td>
+              </tr>
+              <tr>
+                <td>France</td>
+              </tr>
+              <tr>
+                <td>Russia</td>
+              </tr>
+              <tr>
+                <td>Ukraine</td>
+              </tr>
+              <tr>
+                <td>Italy</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="blank"></div>
+  <div class="container second">
+    <div class="item">
+      <div class="img img-first"></div>
+      <div class="card">
+        <h3>Hotter temperatures</h3>
+        <p>Nearly all land areas are seeing more hot days and heat waves;
+          2020 was one of the hottest years on record.
+          Higher temperatures increase heat-related illnesses and can make it more difficult to work and move around.
+          Wildfires start more easily and spread more rapidly when conditions are hotter.</p>
+        <a href="https://www.un.org/en/climatechange/science/key-findings#physical-science">Learn more</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img-second"></div>
+      <div class="card">
+        <h3>More severe storms</h3>
+        <p>Changes in temperature cause changes in rainfall.
+          This results in more severe and frequent storms.
+          They cause flooding and landslides, destroying homes and communities, and costing billions of pounds.</p>
+        <a href="https://www.un.org/en/climatechange/science/key-findings#physical-science">Learn more</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="img img-third"></div>
+      <div class="card">
+        <h3>Increased drought</h3>
+        <p>Water is becoming scarcer in more regions.
+          Droughts can stir destructive sand and dust storms that can move billions of tons of sand across continents.
+          Deserts are expanding, reducing land for growing food.</p>
+        <a href="https://www.un.org/en/climatechange/science/key-findings#physical-science">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="blank"></div>
+  <div class="container first">
+    <h1>Greta Thunberg</hi>
+      <p>The climate crisis is the biggest crisis humanity has ever faced, and if we don’t do something now, we are ruined. I said to myself that when I grow up I want to look back and say, ‘I did what I could then and I have a moral obligation to do
+        all I can.
+      </p><a href="#">Learn more</a>
+  </div>
+  <div class="blank"></div>
+  <script src="{% static 'js/nav.js' %}"></script>
+</body>
+
+</html>
